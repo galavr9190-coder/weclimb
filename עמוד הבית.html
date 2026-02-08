@@ -1,0 +1,217 @@
+<html>
+<head>
+<style>
+
+body {
+  background-color: black;
+  color: white;
+  margin: 10;
+  font-family: Arial;
+}
+
+.topbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: green;
+  padding: 0 15px;
+  height: 70px;   
+}
+
+.topbar img {
+  height: 230%;   
+  width: auto;    
+  padding: 0;   
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: green;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover {
+  background-color: lightgreen;
+}.neon-scribble{
+  width: 700px;
+  height: 22px;
+  margin: 18px auto;
+  position: relative;
+  filter: drop-shadow(0 0 6px rgba(0,255,100,0.6));
+}
+.line-double{
+  width: 680px;
+  height: 10px;
+  margin: 15px auto;
+  border-top: 3px solid #00ff66;
+  border-bottom: 3px solid #00ff66;
+  border-radius: 20px;
+  opacity: 0.95;
+}
+
+.about-section{
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-direction: row-reverse;
+}
+
+.about-text{
+  width: 80%;
+  direction: rtl;
+  text-align: right;
+  font-size: 20px;
+}
+
+.about-title{
+	color: green;
+	font-size: 35px;
+	}
+
+.about-image{
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.about-image img{
+  width: 100%;       
+  max-width: 750px; 
+  height: auto;
+  border-radius: 30px;
+}
+
+.first-title{
+	font-size: 55px;
+	}
+
+
+.footer{
+  background-color: #0b0b0b;
+  border-top: 3px solid #00ff66;
+  margin-top: 60px;
+  padding: 30px 0;
+  color: white;
+}
+
+.footer-bottom{
+  text-align: left;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #aaa;
+	}
+
+
+.banner{
+  position: relative;
+  width: 100%;  
+  margin: 30px auto;
+}
+
+.pic2{
+  width: 100%;
+  height: 70%;       
+  object-fit: cover;
+  display: block;
+  border-radius: 15px;
+}
+
+
+.banner-text{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: green;
+  font-size: 63px;
+  font-weight: bold;
+  text-align: center;
+
+  padding: 10px 20px;
+  border-radius: 12px;
+}
+
+	
+	
+
+</style>
+</head>
+<body>
+
+<div class="topbar">
+	<img src="logo.png" alt="WEclimb logo">
+
+<ul>
+  <li><a href="עמוד הבית.html">ראשי</a></li>
+  <li><a href="סניפים.html">סניפים</a></li>
+  <li><a href="#home">אירועים</a></li>
+  <li><a href="#home">חוגים</a></li>
+  <li><a href="#news">אודות</a></li>
+  <li><a href="#contact">צור קשר</a></li>
+  <li><a href="#about">חנות</a></li>
+</ul>
+</div>
+
+<center>
+<div class="first-title">
+<p>
+ WEclimb-ברוכים הבאים ל <br> 
+ קירות הטיפוס המובילות בארץ
+ </p>
+</div>
+<div class="line-double"></div>
+</center>
+<div class="about-section">
+	<div class="about-text">
+	<div class="about-title"> אודות</div>
+	<p>
+	 weclimb רשת מחחמי הטיפוס המקצועיות והאיכותיות בישראל, הוקמה בשנת 2006 . <br> 
+	 מתוך אהבה לענף הטיפוס, אנו עוסקים בקידום קהילת המטפסים והקהל הרחב.<br>
+	 את המתחמים שלנו אנו מעצבים ומתכננים לחוויה האולטימטיבית, הן של המטפס המקצועי, המטפס החווייתי והן הקהל הרחב. <br>
+	 כל מתחמי הטיפוס שלנו בעלי אופי יחודי ומיוחד המאפשר מגוון רחב של חוויות. <br>
+	 במתחמי הטיפוס ברשת WEclimb ניתן להנות ממגוון מסלולי טיפוס: <br>
+	 טיפוס באבטוח אוטומטי, טיפוס בולדרינג, טיפוס הובלה (בזוגות) ואיזור ייעודי לילדים.<br>  
+	</p>
+	</div>
+	<div class="about-image">
+	<img src="pic1.jpg" alt="climbing">
+	</div>
+</div>
+<div class="banner">
+  <img src="pic2.png" class="pic2" alt="climbing">
+  <p class="banner-text"> לא קופצים לפסגה… מטפסים אליה </p> 
+</div>
+
+</div>
+<footer>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <div class="footer-bottom">
+    © 2026 כל הזכויות שמורות | האתר נבנה על ידי גל אברהמי
+  </div>
+</footer>
+</body>
+</html>

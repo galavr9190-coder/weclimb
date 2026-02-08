@@ -1,0 +1,230 @@
+<html>
+<head>
+<style>
+
+body {
+  background-color: black;
+  color: white;
+  margin: 10;
+  font-family: Arial;
+}
+
+.topbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: green;
+  padding: 0 15px;
+  height: 70px;   
+}
+
+.topbar img {
+  height: 230%;   
+  width: auto;    
+  padding: 0;   
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: green;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+li a:hover {
+  background-color: lightgreen;
+}.neon-scribble{
+  width: 700px;
+  height: 22px;
+  margin: 18px auto;
+  position: relative;
+  filter: drop-shadow(0 0 6px rgba(0,255,100,0.6));
+}
+
+.img1 img{
+  height: 170%;
+  width: auto;    
+  padding: 0;
+  transform: rotate(-90deg);
+   margin-top: -350px;
+}
+
+
+.flag{
+  position: absolute;
+  transform: translate(-50%, -100%); /* שהדגל “ישב” על הנקודה */
+  background: transparent;
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
+  
+}
+
+.info-box{
+  position: absolute;
+  top: 50%;
+  left: 36%;
+  background-color: black;
+  padding: 12px 14px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 270px;
+  height: 120px;
+  display: none;
+  
+  
+}
+.info-row{
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.info-row span{
+  color: lightgreen;
+}
+
+.close{
+  margin-top: 10px;
+  width: 100%;
+  padding: 6px;
+  border: none;
+  border-radius: 8px;
+  background: #0a7c0a;
+  color: white;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+	
+<div class="topbar">
+	<img src="logo.png" alt="WEclimb logo">
+
+<ul>
+  <li><a href="עמוד הבית.html">ראשי</a></li>
+  <li><a href="#סניפים.html">סניפים</a></li>
+  <li><a href="#home">אירועים</a></li>
+  <li><a href="#home">חוגים</a></li>
+  <li><a href="#news">אודות</a></li>
+  <li><a href="#contact">צור קשר</a></li>
+  <li><a href="#about">חנות</a></li>
+</ul>
+</div>
+<center>
+
+ <div class="img1">
+	<img src="pic3.jpg">
+</div>
+
+  <!-- דגל 1 -->
+  <button class="flag" style="top: 65%; left: 37.5%;"
+          onclick="showInfo('תל אביב','אלנבי 94','050-3334590')">
+    🚩
+  </button>
+
+  <!-- דגל 2 -->
+  <button class="flag" style="top: 50%; left: 36.25%;"
+          onclick="showInfo('אריאל', 'דרך הציונות 21','050-6781234')">
+    🚩
+  </button>
+  
+  <!-- דגל 3 --!>
+  <button class="flag" style="top: 62%; left: 54.25%;"
+  onclick="showInfo('באר שבע','צחק בן־צבי 10','054-5664241')">
+  🚩
+</button>
+
+  
+  <!-- קופסת מידע --!>
+ <div id="infoBox" class="info-box">
+    <div class="info-row"><span>עיר:</span> <b id="city"></b></div>
+    <div class="info-row"><span>כתובת:</span> <b id="address"></b></div>
+    <div class="info-row"><span>טלפון:</span> <b id="phone"></b></div>
+    <button class="close" onclick="hideInfo()">סגור</button>
+  </div>
+</div>
+<script>
+function showInfo(city, address, phone){
+  document.getElementById("city").textContent = city;
+  document.getElementById("address").textContent = address;
+  document.getElementById("phone").textContent = phone;
+  document.getElementById("infoBox").style.display = "block";
+}
+
+function hideInfo(){
+  document.getElementById("infoBox").style.display = "none";
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</center>
+</body>
+
+
+</html>
